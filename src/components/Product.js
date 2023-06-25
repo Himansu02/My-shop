@@ -146,8 +146,8 @@ const Product = ({ item }) => {
           <ShoppingCartOutlined />
         </div>
         <div className={styles.icon}>
-          <Link to={`/product/${item._id}`}>
-            <SearchOutlined className={styles.link} />
+          <Link to={`/product/${item._id}`} className={styles.link}>
+            <SearchOutlined  />
           </Link>
         </div>
         {!inList && (

@@ -125,6 +125,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.successContainer{
+  margin-top: 10px;
+}
+.success{
+  color: green;
+  
+}
 
 .userUpdateUpload{
     display: flex;

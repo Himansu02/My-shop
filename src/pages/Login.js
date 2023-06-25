@@ -65,8 +65,8 @@ const Login = () => {
           </button>
 
           <span className={styles.link}>DO NOT REMEMBER THE PASSWORD?</span>
-          <Link to="/register">
-            <span className={styles.link}>CREATE A NEW ACCOUNT</span>
+          <Link to="/register" className={styles.link}>
+            <span >CREATE A NEW ACCOUNT</span>
           </Link>
         </form>
       </div>

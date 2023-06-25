@@ -11,6 +11,7 @@
 }
 .link{
     text-decoration: none;
+    color: black;
 }
 .circle{
     width: 200px;
@@ -62,21 +63,3 @@
     transform: scale(1.1);
 }
 
-@media only screen  and (max-width: 380px) {
-    .container{
-        margin: 2px;
-        min-width: 140px;
-        height: 250px;
-    }
-    .icon{
-        height: 30px;
-        width: 30px;
-    }
-    .circle{
-        width: 100px;
-        height: 100px;
-    }
-    .image{
-        height: 45%;
-    }
-}
