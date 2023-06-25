@@ -29,7 +29,7 @@ export default function Popup({ok,message}) {
           }
           sx={{ mb: 2 }}
         >
-            <p style={{width:"94vw",textAlign:"center",letterSpacing:"2px"}}>{message}</p>
+            <p style={{width:"92vw",textAlign:"center",letterSpacing:"2px"}}>{message}</p>
         </Alert>
       </Collapse>
     </Box>

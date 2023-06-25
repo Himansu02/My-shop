@@ -73,6 +73,8 @@ const Product = () => {
 
       if (!add) {
         dispatch(addProduct({ ...product, quantity, color, size }));
+        setError(true)
+        setMessage("Item Has Been Added To The Cart.")
         // console.log({...product,quantity,color,size}
         const newProduct = { ...product, quantity, color, size };
         const newCart = [...user?.cart, newProduct];
