@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+.button{
+    margin: 5px;
+    min-width: 280px;
+    padding: 10px;
+    border: 2px solid teal;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.titleContainer{
+    padding: 15px;
+}
+.productContainer{
+    height: 100%;
+    width: 100%;
+}
+.button:hover{
+    background-color: teal;
+    color: white;
+}

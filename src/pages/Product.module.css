@@ -1,0 +1,120 @@
+.wrapper{
+    display: flex;
+    padding: 50px;
+}
+.imageContainer{
+    flex: 1;
+}
+
+.have{
+    margin-top: 30px;
+    color: red;
+    font-size: 20px;
+}
+
+.popup{
+    position: sticky;
+    top: 50px;
+    z-index: 20;
+}
+
+.infoContainer{
+    flex: 1;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+.image{
+    width: 100%;
+    height: 90vh;
+    object-fit: contain;
+}
+.title{
+    font-weight: 200;
+}
+.desc{
+    margin: 20px 0px;
+}
+.price{
+    font-weight: 100;
+    font-size: 40px;
+}
+.filterContainer{
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter{
+    
+    
+    display: flex;
+    align-items: center;
+}
+.filterTitle{
+    font-size: 20px;
+    font-weight: 200;
+}
+.filterColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.filterSize{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.addContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+.amountContainer{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.amount{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+.button{
+    padding: 15px;
+    border: 2px solid teal;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: teal;
+    color: white;
+}
+
+@media only screen  and (max-width: 380px) {
+    .wrapper{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .infoContainer{
+        padding: 10px;
+    }
+    .filterContainer{
+        width: 100%;
+    }
+    
+    .image{
+        height: 40vh;
+    }
+    .addContainer{
+        width: 100%;
+    }
+}

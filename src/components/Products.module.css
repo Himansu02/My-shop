@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen  and (max-width: 380px) {
+    .container{
+        padding: 42px;
+        /* justify-content: center; */
+    }
+}

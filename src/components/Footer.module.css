@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    margin: 10px 0px;
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px;
+}
+.logo{
+
+}
+.desc{
+    margin: 20px 0px;
+}
+.socialIcons{
+    display: flex;
+}
+.socialIcon{
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.right{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 30px;
+}
+.center{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleCenter{
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    
+}
+.symbols{
+    margin-right: 10px;
+}
+.listItem{
+    
+}
+.titleRight{
+
+    margin-bottom: 20px;
+}
+
+.contactItem{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 50%;
+}
+
+@media only screen  and (max-width: 380px) {
+    .center{
+        align-items: flex-start;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .symbols{
+        margin-right: 5px;
+    }
+    .right{
+        background-color: #fff8f8;
+        padding-left: 15px;
+    }
+}

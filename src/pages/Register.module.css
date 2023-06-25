@@ -1,0 +1,97 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+        center;
+        /* background-size: cover; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.wrapper{
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+}
+.title{
+    font-size: 24px;
+    font-weight: 300;
+}
+.leftInputContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.rightInputContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input{
+    flex: 1;
+    width: 90%;
+    margin: 12px 10px 0px 0px;
+    padding: 10px;
+}
+.agreement{
+    font-size: 12px;
+    margin: 20px 0px;
+}
+.button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.notExist{
+    color: green;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.userError{
+    margin-top: 8px;
+    color: red;
+    font-size: 12px;
+}
+
+.error{
+    font-size: 15px;
+    margin-top: 20px;
+    color: red;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+@media only screen  and (max-width: 380px) {
+    .wrapper{
+        width: 75%;
+    }
+    .input{
+       width: 80%;
+       padding: 7px;
+    }
+    .userError{
+        font-size: 9px;
+    }
+    .notExist{
+        font-size: 9px;
+    }
+    .container{
+        background-position: 90vh;
+     }
+     .error{
+        font-size: 10px;
+     }
+}
