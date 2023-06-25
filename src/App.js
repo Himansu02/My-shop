@@ -14,8 +14,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Wishlist from "./pages/Wishlist";
 
 const App = () => {
-  const user = useSelector((state) => state.user.currentUser);
-  const token = useSelector((state) => state.user.token);
+  const user = useSelector((state) => state.user?.currentUser);
+  const token = useSelector((state) => state.user?.token);
   // console.log(token)
   // console.log(user)
   return (
