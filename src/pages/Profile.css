@@ -160,7 +160,7 @@
     font-weight: 600;
 }
 
-@media only screen  and (max-width: 380px) {
+@media only screen  and (max-width: 480px) {
   .userContainer{
     flex-direction: column;
   }
@@ -172,11 +172,14 @@
     margin-left: 0px;
   }
   .userUpdateInput{
-    width: 150px;
+    width: 180px;
   }
   .userUpdateImg{
     width: 60px;
     height: 60px;
+    margin-right: 10px;
+  }
+  .userUpdateRight{
     margin-right: 10px;
   }
 }

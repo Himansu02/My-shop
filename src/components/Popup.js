@@ -5,12 +5,13 @@ import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
 import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
+import styles from "./Popup.module.css"
 
 export default function Popup({ok,message}) {
   const [open, setOpen] = React.useState(true);
 
   return (
-    <Box sx={{ width: '100%'}}>
+    <Box sx={{ width: '100vw'}}>
       <Collapse in={open}>
         <Alert
             icon={false}
@@ -29,7 +30,7 @@ export default function Popup({ok,message}) {
           }
           sx={{ mb: 2 }}
         >
-            <p style={{width:"92vw",textAlign:"center",letterSpacing:"2px"}}>{message}</p>
+            <p className={styles.para}>{message}</p>
         </Alert>
       </Collapse>
     </Box>

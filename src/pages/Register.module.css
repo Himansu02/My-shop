@@ -74,7 +74,7 @@
     margin-right: 10px;
 }
 
-@media only screen  and (max-width: 380px) {
+@media only screen  and (max-width: 480px) {
     .wrapper{
         width: 75%;
     }

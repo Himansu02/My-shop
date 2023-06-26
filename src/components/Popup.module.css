@@ -1,0 +1,11 @@
+.para{
+    width: 92vw;
+    text-align: center;
+    letter-spacing: 2px;
+}
+@media only screen  and (max-width: 480px) {
+    .para{
+        font-size: 11px;
+        width: 85vw;
+    }
+}

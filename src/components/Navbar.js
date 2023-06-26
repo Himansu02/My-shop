@@ -92,6 +92,7 @@ const Navbar = () => {
             <span className={styles.menuItems}>SIGNIN</span>
           </Link>
         )}
+
         <Link
           to="/mylist"
           className={`${styles.link} ${styles.fav} ${!user && styles.notUser}`}
@@ -106,15 +107,14 @@ const Navbar = () => {
           </Badge>
         </Link>
         {user && (
-          <div>
-            <Button
-              id="demo-positioned-button"
-              aria-controls={open ? "demo-positioned-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              <div className={styles.imgContainer}>
+          <div className={styles.imgContainer}>
+              <Button
+                id="demo-positioned-button"
+                aria-controls={open ? "demo-positioned-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+              >
                 <img
                   className={styles.img}
                   src={
@@ -124,8 +124,7 @@ const Navbar = () => {
                   }
                   alt="profile-pic"
                 />{" "}
-              </div>
-            </Button>
+              </Button>
             <Menu
               id="demo-positioned-menu"
               aria-labelledby="demo-positioned-button"

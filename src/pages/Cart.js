@@ -223,9 +223,9 @@ const Cart = () => {
                         <span className={styles.productName}>
                           <b>Product:</b> {product.title}
                         </span>
-                        <span className={styles.productId}>
+                        {/* <span className={styles.productId}>
                           <b>ID:</b> {product._id}
-                        </span>
+                        </span> */}
                         <div
                           className={styles.productColor}
                           style={{ backgroundColor: `${product.color}` }}

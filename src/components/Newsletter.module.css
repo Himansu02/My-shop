@@ -35,7 +35,10 @@
     border: none;
     cursor: pointer;
 }
-@media only screen  and (max-width: 380px) {
+@media only screen  and (max-width: 480px) {
+    .container{
+        margin-right: 5vmin;
+    }
     .desc{
         text-align: center;
     }

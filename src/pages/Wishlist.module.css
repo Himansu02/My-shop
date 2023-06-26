@@ -1,7 +1,8 @@
 .container{
     display: flex;
-    padding: 40px;
+    padding: 2vmin;
     flex-wrap: wrap;
+    margin-left: 2vmin;
 }
 .button{
     margin: 5px;
@@ -13,7 +14,7 @@
     cursor: pointer;
 }
 .titleContainer{
-    padding: 15px;
+    padding: 5vmin;
 }
 .productContainer{
     height: 100%;

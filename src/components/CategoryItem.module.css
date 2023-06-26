@@ -1,7 +1,7 @@
 .container{
     flex: 1;
     height: 70vh;
-    margin: 3px;
+    margin: 0.1vmin;
     position: relative;
 }
 
@@ -23,18 +23,18 @@
 }
 .title{
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 5vmin;
 }
 .button{
     border: none;
     background-color: white;
-    padding: 10px;
+    padding: 1.5vmin;
     color: gray;
     font-weight: 600;
     cursor: pointer;
 }
-@media only screen  and (max-width: 380px) {
+@media only screen  and (max-width: 480px) {
     .image{
-        height: 30vh;
+        height: 50vh;
     }
 }

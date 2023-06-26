@@ -7,4 +7,8 @@
     justify-content: center;
     font-size: 14px;
     font-weight: 50px;
+    width: 100%;
+}
+.marquee{
+    width: 100%;
 }
