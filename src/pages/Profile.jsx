@@ -24,6 +24,7 @@ import {
 } from "@mui/icons-material";
 
 export default function Profile() {
+  const [uploading, setUploading] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -83,6 +84,7 @@ export default function Profile() {
     }
 
     if (file) {
+      setUploading(true)
       const fileName = new Date().getTime() + file.name;
 
       const storage = getStorage(app);
@@ -113,6 +115,7 @@ export default function Profile() {
           }
         },
         (error) => {
+          setUploading(false)
           // Handle unsuccessful uploads
         },
         () => {
@@ -123,6 +126,7 @@ export default function Profile() {
             // updateUser(id, newUser, dispatch);
             UpdateUser(id, userToken, newUser, dispatch);
 
+            setUploading(false);
             // console.log(product);
           });
         }
@@ -257,15 +261,18 @@ export default function Profile() {
               <div className="userUpdateRight">
                 <div>
                   <div className="userUpdateUpload">
-                    <img
-                      className="userUpdateImg"
-                      src={
-                        user?.img
-                          ? user?.img
-                          : "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"
-                      }
-                      alt=""
-                    />
+                    {!uploading && (
+                      <img
+                        className="userUpdateImg"
+                        src={
+                          user?.img
+                            ? user?.img
+                            : "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"
+                        }
+                        alt=""
+                      />
+                    )}
+                    {uploading && <span>Uploading...</span>}
                     <label htmlFor="file">
                       <Publish className="userUpdateIcon" />
                     </label>
@@ -276,10 +283,9 @@ export default function Profile() {
                       onChange={handleImage}
                     />
                   </div>
-                  {file && (<div className="successContainer">
-                    <span className="success">
-                      Click Update To Change.
-                    </span>
+                  {file && (
+                    <div className="successContainer">
+                      <span className="success">Click Update To Change.</span>
                     </div>
                   )}
                 </div>

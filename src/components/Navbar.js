@@ -28,7 +28,7 @@ const Navbar = () => {
   const user = useSelector((state) => state.user.currentUser);
   const userToken = useSelector((state) => state.user.token);
 
-  const listQuantity=useSelector((state)=>state.list.quantity)
+  const listQuantity = useSelector((state) => state.list.quantity);
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -77,7 +77,9 @@ const Navbar = () => {
         )}
       </div>
       <div className={styles.middle}>
-        <h1 className={styles.logo}>My Shop</h1>
+        <Link to="/" className={styles.link}>
+          <h1 className={styles.logo}>My Shop</h1>
+        </Link>
       </div>
       <div className={styles.right}>
         {!user && (
@@ -90,9 +92,12 @@ const Navbar = () => {
             <span className={styles.menuItems}>SIGNIN</span>
           </Link>
         )}
-        <Link to="/mylist"className={`${styles.link} ${styles.fav} ${!user && styles.notUser}`}>
+        <Link
+          to="/mylist"
+          className={`${styles.link} ${styles.fav} ${!user && styles.notUser}`}
+        >
           <Badge badgeContent={listQuantity} color="primary">
-          <FavoriteBorderOutlined></FavoriteBorderOutlined>
+            <FavoriteBorderOutlined></FavoriteBorderOutlined>
           </Badge>
         </Link>
         <Link to="/cart" className={`${styles.link} ${styles.cart}`}>
