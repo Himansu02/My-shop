@@ -39,7 +39,11 @@
     .container{
         margin-right: 5vmin;
     }
+    .title{
+        font-size: 55px;
+    }
     .desc{
+        font-size: 20px;
         text-align: center;
     }
     .inputContainer{
