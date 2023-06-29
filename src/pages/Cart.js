@@ -110,7 +110,6 @@ const Cart = () => {
               headers: { token: `Bearer ${userToken}` },
             }
           );
-          console.log(res.data);
         },
         prefill: {
           name: "Gaurav Kumar",
@@ -136,7 +135,6 @@ const Cart = () => {
         alert(response.error.metadata.payment_id);
       });
       razor.open();
-      console.log(razor);
     } catch (err) {
       console.log(err.message);
     }

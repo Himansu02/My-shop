@@ -24,6 +24,7 @@ const Wishlist = () => {
             return <Product item={item} key={index}></Product>;
           })}
         </div>
+        {list.length===0 && <div className={styles.para}><p>No items in the List !</p></div>}
       </div>
       <Footer />
     </div>

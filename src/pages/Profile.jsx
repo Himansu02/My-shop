@@ -50,7 +50,6 @@ export default function Profile() {
   };
 
   const handleClick = (e) => {
-    console.log("working");
     e.preventDefault();
     let updatedUser = {};
     let update = false;

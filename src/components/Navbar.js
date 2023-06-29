@@ -39,7 +39,6 @@ const Navbar = () => {
     dispatch(logout());
     dispatch(removeAllItems());
     dispatch(removeAllItemsFromList());
-    console.log(userToken);
   };
   const handleClose = () => {
     setAnchorEl(null);

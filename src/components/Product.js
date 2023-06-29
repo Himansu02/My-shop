@@ -50,8 +50,6 @@ const Product = ({ item }) => {
         },
         { headers: { token: `Bearer ${userToken}` } }
       );
-
-      console.log(res.data);
       dispatch(loginSuccess(res.data));
     } catch (err) {
       console.log(err);
@@ -80,7 +78,6 @@ const Product = ({ item }) => {
         { headers: { token: `Bearer ${userToken}` } }
       );
 
-      console.log(res.data);
       dispatch(loginSuccess(res.data));
     } catch (err) {
       console.log(err);
@@ -127,7 +124,6 @@ const Product = ({ item }) => {
           },
           { headers: { token: `Bearer ${userToken}` } }
         );
-        console.log(res.data);
         dispatch(loginSuccess(res.data));
       } else {
         return;

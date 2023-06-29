@@ -22,7 +22,6 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log({ username, password });
     login(dispatch, { username, password });
     // console.log(currentUser)
   };

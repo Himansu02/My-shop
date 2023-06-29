@@ -20,7 +20,7 @@ const Products = ({ cat, filters, sort, search, newQuery }) => {
             ? `https://my-shop-rest-api.vercel.app/products?search=${search}`
             : "https://my-shop-rest-api.vercel.app/products"
         );
-        console.log(resData);
+        
         setProducts(resData.data);
       } catch (err) {
         console.log(err);

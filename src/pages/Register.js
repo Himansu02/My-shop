@@ -32,7 +32,6 @@ const Register = () => {
   const confirmPassword = useRef();
 
   useEffect(() => {
-    console.log(userToken);
     dispatch(logout());
   }, []);
 
@@ -69,14 +68,12 @@ const Register = () => {
             totalAmount += cartItems[i].quantity * cartItems[i].price;
           }
 
-          console.log({ products: cartItems, totalAmount, quantity });
           dispatch(getProducts({ products: cartItems, totalAmount, quantity }));
-          console.log(res.data.accessToken);
           dispatch(getList({products:listItems,quantity:listQuantity}))
           dispatch(loginSuccess(res.data));
           dispatch(getToken(res.data.accessToken));
 
-          console.log(res.data);
+   
         } catch (err) {
           setError(true);
           setMessage(err.message);

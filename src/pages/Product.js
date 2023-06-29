@@ -29,6 +29,7 @@ const Product = () => {
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
+
   const quantityHandler = (type) => {
     if (type === "dec") {
       if (quantity === 1) {
@@ -77,7 +78,6 @@ const Product = () => {
         const newProduct = { ...product, quantity, color, size };
         const newCart = [...user?.cart, newProduct];
         // newCart.push(newProduct)
-        console.log(userToken);
         const res = await axios.put(
           `https://my-shop-rest-api.vercel.app/users/${user?._id}`,
           {
@@ -85,7 +85,6 @@ const Product = () => {
           },
           { headers: { token: `Bearer ${userToken}` } }
         );
-        console.log(res.data);
         dispatch(loginSuccess(res.data));
       } else {
         setError(true);
@@ -123,14 +122,13 @@ const Product = () => {
               <span className={styles.filterTitle}>Color</span>
               {product.color?.map((c) => {
                 return (
-                  <div
-                    className={styles.filterColor}
-                    key={c}
-                    style={{ backgroundColor: `${c}` }}
-                    onClick={() => {
-                      setColor(c);
-                    }}
-                  ></div>
+                    <div
+                      className={`${color===c ? styles.selected:styles.filterColor}`}
+                      style={{ backgroundColor: `${c}` }}
+                      onClick={() => {
+                        setColor(c);
+                      }}
+                    ></div>
                 );
               })}
             </div>
