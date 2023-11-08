@@ -7,7 +7,7 @@ export const categories = [
     },
     {
       id: 2,
-      img: "https://media.istockphoto.com/photos/handsome-man-picture-id532010167?k=6&m=532010167&s=612x612&w=0&h=mkxCgM5XNEMQKukGUl0g1CtLwTGACNfjGSmPZXGX6GA=",
+      img: "https://i.pinimg.com/474x/95/d3/aa/95d3aa065843f17c15fe32b48f8c361a.jpg",
       title: "MEN'S WEAR",
       cat:'men'
     },
